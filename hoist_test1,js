@@ -1,0 +1,7 @@
+var x = 99;
+function x() {
+  return 444;
+}
+
+console.log(x);
+console.log(x());
