@@ -23,19 +23,14 @@ function makeCounter() {
 }
 
 let [increment1, increment2, incrementX, getCounter]  = makeCounter();
-
-// let [increment1, increment2, getCounter] = [ funcs[0], funcs[1], funcs[2]];
-// let [increment1, increment2, getCounter] = funcs;
-// let increment2 = funcs[1];
+let [junk1, junk2, junk3, getCounter2]  = makeCounter();
 
 increment1();
 console.log(getCounter()); // 1
-
 increment2();
 console.log(getCounter()); // 3
-
 incrementX(5);
 console.log(getCounter()); // 8
-
 increment2();
 console.log(getCounter()); // 10
+console.log(getCounter2()); // 0
